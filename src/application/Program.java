@@ -83,8 +83,8 @@ public class Program {
 		double qtdCenario2Produto2 = restricao1 / quantidadeDeMateriaPrimaGastosProduto2;
 		double lucroCenario2 = p1.getLucroTotal() * qtdCenario2Produto1 + p2.getLucroTotal() * qtdCenario2Produto2;
 		
-		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario2Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario2Produto1 <= 400) {
-			if(quantidadeDeTempoGastosProduto1 * qtdCenario2Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario2Produto1 <= 450) {
+		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario2Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario2Produto1 <= restricao1) {
+			if(quantidadeDeTempoGastosProduto1 * qtdCenario2Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario2Produto1 <= restricao2) {
 				if(qtdCenario2Produto1 >= 0) {
 					if(qtdCenario2Produto2 >= 0) {
 						System.out.println("\nQuantidade de " + produtoInserido1 + " a ser produzido(a) no cenário 2: " + qtdCenario2Produto1);
@@ -115,8 +115,8 @@ public class Program {
 		double qtdCenario3Produto2 = p2.getTerceiraComparacao(0, p1);
 		double lucroCenario3 = p1.getLucroTotal() * qtdCenario3Produto1 + p2.getLucroTotal() * qtdCenario3Produto2;
 		
-		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario3Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario3Produto1 <= 400) {
-			if(quantidadeDeTempoGastosProduto1 * qtdCenario3Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario3Produto1 <= 450) {
+		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario3Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario3Produto1 <= restricao1) {
+			if(quantidadeDeTempoGastosProduto1 * qtdCenario3Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario3Produto1 <= restricao2) {
 				if(qtdCenario3Produto1 >= 0) {
 					if(qtdCenario3Produto2 >= 0) {
 						System.out.println("\nQuantidade de " + produtoInserido1 + " a ser produzido(a) no cenário 3: " + qtdCenario3Produto2);
@@ -147,8 +147,8 @@ public class Program {
 		double lucroCenario4 = p1.getLucroTotal() * qtdCenario4Produto2 + p2.getLucroTotal() * qtdCenario4Produto1;
 		
 		System.out.println("\nComparação II e III: ");
-		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario4Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario4Produto1 <= 400) {
-			if(quantidadeDeTempoGastosProduto1 * qtdCenario4Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario4Produto1 <= 450) {
+		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario4Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario4Produto1 <= restricao1) {
+			if(quantidadeDeTempoGastosProduto1 * qtdCenario4Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario4Produto1 <= restricao2) {
 				if(qtdCenario4Produto1 >= 0) {
 					if(qtdCenario4Produto2 >= 0) {
 						System.out.println("\nQuantidade de " + produtoInserido1 + " a ser produzido(a) no cenário 4: " + qtdCenario4Produto2);
@@ -178,8 +178,8 @@ public class Program {
 		double qtdCenario5Produto2 = p2.getQuintaComparacao(quantidadeDeTempoGastosProduto2, p1); 
 		double lucroCenario5 = p1.getLucroTotal() * qtdCenario5Produto2 + p2.getLucroTotal() * qtdCenario5Produto1;
 		
-		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario5Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario5Produto1 <= 400) {
-			if(quantidadeDeTempoGastosProduto1 * qtdCenario5Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario5Produto1 <= 450) {
+		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario5Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario5Produto1 <= restricao1) {
+			if(quantidadeDeTempoGastosProduto1 * qtdCenario5Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario5Produto1 <= restricao2) {
 				if(qtdCenario5Produto1 >= 0) {
 					if(qtdCenario5Produto2 >= 0) {
 						System.out.println("\nQuantidade de " + produtoInserido1 + " a ser produzido(a) no cenário 5: " + qtdCenario5Produto2);
@@ -203,14 +203,13 @@ public class Program {
 		}
 		
 		//sexta comparação
-		
 		System.out.println("\nComparação III e IV: ");
 		double qtdCenario6Produto1 = 0;
 		double qtdCenario6Produto2 = 0; 
 		double lucroCenario6 = p1.getLucroTotal() * qtdCenario6Produto2 + p2.getLucroTotal() * qtdCenario6Produto1;
 		
-		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario6Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario6Produto1 <= 400) {
-			if(quantidadeDeTempoGastosProduto1 * qtdCenario6Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario6Produto1 <= 450) {
+		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario6Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario6Produto1 <= restricao1) {
+			if(quantidadeDeTempoGastosProduto1 * qtdCenario6Produto2 + quantidadeDeTempoGastosProduto2 * qtdCenario6Produto1 <= restricao2) {
 				if(qtdCenario6Produto1 >= 0) {
 					if(qtdCenario6Produto2 >= 0) {
 						System.out.println("\nQuantidade de " + produtoInserido1 + " a ser produzido(a) no cenário 6: " + qtdCenario6Produto2);
