@@ -13,34 +13,4 @@ public class Produto1 extends Produtos {
 				/ (produto.getRestricao2() - (this.getRestricao2() / this.getRestricao1()) * produto.getRestricao1());
 	}
 
-
-	@Override
-	public Double getSegundaComparacao(int totalDisponivel, Produtos produto) {
-		return 0.0;
-	}
-
-
-	@Override
-	public Double getTerceiraComparacao(int totalDisponivel, Produtos produto) {
-		return 0.0;
-	}
-
-
-	@Override
-	public Double getQuartaComparacao(int totalDisponivel, Produtos produto) {
-		return 0.0;
-	}
-
-
-	@Override
-	public Double getQuintaComparacao(int totalDisponivel, Produtos produto) {
-		return 0.0;
-	}
-
-
-	@Override
-	public Double getSextaComparacao(int totalDisponivel, Produtos produto) {
-		return 0.0;
-	}
-	
 }

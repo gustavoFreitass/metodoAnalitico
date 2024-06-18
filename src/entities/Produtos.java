@@ -35,13 +35,4 @@ public abstract class Produtos {
 	
 	public abstract Double getPrimeiraComparacao(int totalDisponivel, int totalTempo, Produtos produto);
 	
-	public abstract Double getSegundaComparacao(int totalDisponivel, Produtos produto);
-	
-	public abstract Double getTerceiraComparacao(int totalDisponivel, Produtos produto);
-	
-	public abstract Double getQuartaComparacao(int totalDisponivel, Produtos produto);
-	
-	public abstract Double getQuintaComparacao(int totalDisponivel, Produtos produto);
-	
-	public abstract Double getSextaComparacao(int totalDisponivel, Produtos produto);
 }

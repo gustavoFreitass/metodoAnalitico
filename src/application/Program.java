@@ -78,8 +78,7 @@ public class Program {
 		
 		//Iniciando a Segunda Comparação
 		System.out.println("\nComparação I e III: ");
-		double qtdCenario2Produto1 = p1.getSegundaComparacao(0, p2);
-		p2.setProduto1(qtdCenario2Produto1);
+		double qtdCenario2Produto1 = 0;
 		double qtdCenario2Produto2 = restricao1 / quantidadeDeMateriaPrimaGastosProduto2;
 		double lucroCenario2 = p1.getLucroTotal() * qtdCenario2Produto1 + p2.getLucroTotal() * qtdCenario2Produto2;
 		
@@ -111,8 +110,7 @@ public class Program {
 		
 		System.out.println("\nComparação I e IV: ");
 		double qtdCenario3Produto1 = restricao1 / quantidadeDeMateriaPrimaGastosProduto1;
-		p2.setProduto1(qtdCenario3Produto1);
-		double qtdCenario3Produto2 = p2.getTerceiraComparacao(0, p1);
+		double qtdCenario3Produto2 = 0;
 		double lucroCenario3 = p1.getLucroTotal() * qtdCenario3Produto1 + p2.getLucroTotal() * qtdCenario3Produto2;
 		
 		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario3Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario3Produto1 <= restricao1) {
@@ -141,8 +139,7 @@ public class Program {
 		
 		//Iniciando a quarta comparação
 		
-		double qtdCenario4Produto1 = p1.getQuartaComparacao(quantidadeDeMateriaPrimaGastosProduto1, p1);
-		p2.setProduto1(qtdCenario4Produto1);
+		double qtdCenario4Produto1 = 0;
 		double qtdCenario4Produto2 = restricao2 / quantidadeDeTempoGastosProduto2; 
 		double lucroCenario4 = p1.getLucroTotal() * qtdCenario4Produto2 + p2.getLucroTotal() * qtdCenario4Produto1;
 		
@@ -174,8 +171,7 @@ public class Program {
 		//quinta comparação
 		System.out.println("\nComparação II e IV: ");
 		double qtdCenario5Produto1 = restricao2 / quantidadeDeTempoGastosProduto1;
-		p2.setProduto1(qtdCenario5Produto1);
-		double qtdCenario5Produto2 = p2.getQuintaComparacao(quantidadeDeTempoGastosProduto2, p1); 
+		double qtdCenario5Produto2 = 0; 
 		double lucroCenario5 = p1.getLucroTotal() * qtdCenario5Produto2 + p2.getLucroTotal() * qtdCenario5Produto1;
 		
 		if(quantidadeDeMateriaPrimaGastosProduto1 * qtdCenario5Produto2 + quantidadeDeMateriaPrimaGastosProduto2 * qtdCenario5Produto1 <= restricao1) {
