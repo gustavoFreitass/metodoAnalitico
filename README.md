@@ -24,3 +24,17 @@ O objetivo principal deste projeto foi proporcionar uma maneira mais rápida e e
 1. Clone este repositório:
    ```bash
    git clone https://github.com/gustavoFreitass/metodoAnalitico.git
+
+## Contribuições
+
+Contribuições são bem-vindas! Se você tem sugestões para melhorias ou correções, fique à vontade para abrir uma *issue* ou enviar um *pull request*. Para contribuir:
+
+1. Faça um fork deste repositório.
+2. Crie uma branch com sua contribuição (`git checkout -b minha-contribuicao`).
+3. Faça as alterações desejadas e commite-as (`git commit -am 'Adicionando minha contribuição'`).
+4. Envie a branch para o seu repositório (`git push origin minha-contribuicao`).
+5. Abra uma *pull request* no repositório original.
+
+## Licença
+
+Este projeto é licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT).
